@@ -1,16 +1,16 @@
-# name: '.NET Setup Action'
-# description: 'Checks out the repository and sets up .NET 7'
+name: '.NET Setup Action'
+description: 'Checks out the repository and sets up .NET 7'
  
-# runs:
-#   using: 'composite'
-#   steps:
-#     - name: Checkout Repository
-#       uses: actions/checkout@v2
+runs:
+  using: 'composite'
+  steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
  
-#     - name: Setup .NET 7
-#       uses: actions/setup-dotnet@v1
-#       with:
-#         dotnet-version: 7.x
+    - name: Setup .NET 7
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 7.x
 
 # name: .NET Setup Action
 # description: Checks out the repository and sets up .NET 7
@@ -31,20 +31,20 @@
 #           dotnet-version: 7.x
 
 
-name: .NET Setup Action
+# name: .NET Setup Action
 
-on:
-  workflow_dispatch:
+# on:
+#   workflow_dispatch:
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
     
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
+#     steps:
+#       - name: Checkout Repository
+#         uses: actions/checkout@v2
 
-      - name: Setup .NET 7
-        uses: actions/setup-dotnet@v1
-        with:
-          dotnet-version: 7.x
+#       - name: Setup .NET 7
+#         uses: actions/setup-dotnet@v1
+#         with:
+#           dotnet-version: 7.x
